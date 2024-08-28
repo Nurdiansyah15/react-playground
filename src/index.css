@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arab";
+  src: url("./assets/fonts/ScheherazadeNew-Medium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.me-container {
+  font-size: 30px;
+  width: 100%; /* Sesuaikan dengan kebutuhan */
+  white-space: pre-wrap; /* Mengizinkan pembungkus teks saat ada baris baru */
+  overflow-wrap: break-word; /* Memungkinkan teks untuk membungkus kata */
+}
+
+.efek-ketik {
+  display: inline-block;
+  white-space: pre; /* Membuat teks menganggap spasi dan newline */
+  overflow: hidden;
+}
+
+/* scroll bar hidden */
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s forwards;
+}
+
+.text-justify-end {
+  text-align: justify;
+  text-align-last: center;
+}
