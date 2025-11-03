@@ -12,7 +12,6 @@ pipeline {
             steps {
                 echo 'Pulling latest code...'
                 checkout scm
-                echo 'Code pulled successfully.'
             }
         }
 
